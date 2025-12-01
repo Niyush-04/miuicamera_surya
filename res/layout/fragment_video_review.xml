@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/v6_video_review_image" android:background="@android:color/black" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@null" />
+    <ImageView android:layout_gravity="center" android:id="@id/v6_video_btn_play" android:background="@drawable/bg_thumbnail_background_full" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_vector_play" android:scaleType="centerInside" android:contentDescription="@string/accessibility_preview_button" style="@style/ReviewControlIcon" />
+</FrameLayout>
