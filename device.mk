@@ -5,7 +5,7 @@
 #
 
 # Inherit from the proprietary version
-$(call inherit-product, vendor/xiaomi/miuicamera-sweet/miuicamera-sweet-vendor.mk)
+$(call inherit-product, vendor/xiaomi/miuicamera-surya/miuicamera-surya-vendor.mk)
 
 # Priv-app permission
 PRODUCT_COPY_FILES += \

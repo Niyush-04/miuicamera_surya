@@ -1,6 +1,6 @@
-From 18fc4af4bd78ab24e876c610cee3143028714cb0 Mon Sep 17 00:00:00 2001
+From 418379b160ac4b1619d4756c508a4182bfcdb60a Mon Sep 17 00:00:00 2001
 From: Alexander Winkowski <dereference23@outlook.com>
-Date: Thu, 18 Apr 2024 11:47:56 +0200
+Date: Wed, 26 Mar 2025 23:48:39 +0800
 Subject: [PATCH 2/3] Disable `BackupAgent`
 
 * Doesn't work on AOSP
@@ -11,18 +11,18 @@ Change-Id: I0be35e30009b6a3f1d3f0f2930a971c25a9f4182
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/AndroidManifest.xml b/AndroidManifest.xml
-index 0ad547314..32685eaf3 100644
+index 93d6cf26..0d9ef368 100644
 --- a/AndroidManifest.xml
 +++ b/AndroidManifest.xml
-@@ -72,7 +72,7 @@
+@@ -67,7 +67,7 @@
+         </intent>
          <package android:name="com.xiaomi.scanner"/>
-         <package android:name="com.android.htmlviewer"/>
      </queries>
--    <application android:allowBackup="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:backupAgent="com.android.camera.backup.CameraBackupAgent" android:extractNativeLibs="false" android:hardwareAccelerated="true" android:icon="@mipmap/ic_launcher_camera_cv" android:label="@string/camera_label" android:largeHeap="true" android:name="com.android.camera.CameraAppImpl" android:networkSecurityConfig="@xml/network_security_config" android:resizeableActivity="false" android:supportsRtl="true" android:theme="@style/ThemeCamera">
-+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:extractNativeLibs="false" android:hardwareAccelerated="true" android:icon="@mipmap/ic_launcher_camera_cv" android:label="@string/camera_label" android:largeHeap="true" android:name="com.android.camera.CameraAppImpl" android:networkSecurityConfig="@xml/network_security_config" android:resizeableActivity="false" android:supportsRtl="true" android:theme="@style/ThemeCamera">
+-    <application android:allowBackup="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:backupAgent="com.android.camera.backup.CameraBackupAgent" android:extractNativeLibs="false" android:hardwareAccelerated="true" android:icon="@mipmap/ic_launcher_camera" android:label="@string/camera_label" android:largeHeap="true" android:name="com.android.camera.CameraAppImpl" android:networkSecurityConfig="@xml/network_security_config" android:resizeableActivity="false" android:supportsRtl="true" android:theme="@style/ThemeCamera">
++    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:extractNativeLibs="false" android:hardwareAccelerated="true" android:icon="@mipmap/ic_launcher_camera" android:label="@string/camera_label" android:largeHeap="true" android:name="com.android.camera.CameraAppImpl" android:networkSecurityConfig="@xml/network_security_config" android:resizeableActivity="false" android:supportsRtl="true" android:theme="@style/ThemeCamera">
+         <uses-library android:name="micloud-sdk" android:required="false"/>
          <meta-data android:name="required_permissions" android:value="@string/required_permissions_supportModifiable"/>
          <meta-data android:name="miui.supportRequiredModifiable" android:value="true"/>
-         <meta-data android:name="com.miui.bugreport.LOG_DIR" android:resource="@xml/log_paths"/>
 -- 
-2.43.0
+2.52.0
 
